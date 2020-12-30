@@ -1,9 +1,10 @@
 #pragma once
-
+#pragma comment(lib, "wininet.lib")
 #include <string>
 #include <sstream>
 #include <vector>
 #include <algorithm>
+#include <Windows.h>
 #include <WinInet.h>
 
 #include "constants.h"

@@ -5,6 +5,8 @@
 #define ESINDEX void *
 #endif
 
+#include <Windows.h>
+
 // external undefined classes
 class   CRadarView ;
 class   CPlugInData ;

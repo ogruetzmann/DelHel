@@ -103,7 +103,7 @@ std::ostream& operator<<(std::ostream& os, const flightplan& fp)
 {
 	os << "Flight(" << fp.callsign << "): ";
 
-	for (int i = 0; i < fp.route.size(); i++) {
+	for (unsigned int i = 0; i < fp.route.size(); i++) {
 		os << fp.route[i];
 		if (i < fp.route.size() - 1) {
 			os << ";";

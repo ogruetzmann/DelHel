@@ -31,14 +31,14 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -203,7 +203,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CDelHel.cpp" />
-    <ClCompile Include="DelHel.cpp" />
     <ClCompile Include="flightplan.cpp" />
     <ClCompile Include="helpers.cpp" />
     <ClCompile Include="pch.cpp">
@@ -223,15 +222,12 @@
       <FileType>Document</FileType>
     </CopyFileToFolders>
     <None Include="DelHel.def" />
-    <None Include="res\DelHel.rc2" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="airport.h" />
     <ClInclude Include="CDelHel.h" />
     <ClInclude Include="constants.h" />
-    <ClInclude Include="DelHel.h" />
     <ClInclude Include="flightplan.h" />
-    <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="route_entry.h" />
